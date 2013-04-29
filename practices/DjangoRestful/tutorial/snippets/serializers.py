@@ -9,6 +9,7 @@ class SnippetSerializer(serializers.Serializer):
     lineos = serializers.BooleanField(required=False)
     language = serializers.ChoiceField(choices=LANGUAGE_CHOICES,default='python')
     style = serializers.ChoiceField(choices=STYLE_CHOICES,default='friendly')
+    id = serializers.Field() # Note:@see http://stackoverflow.com/questions/15014495/id-field-in-django-rest-framework-serializer
     
     def restore_object(self,attrs,instance=None):
         """
@@ -29,3 +30,7 @@ class SnippetSerializer(serializers.Serializer):
             return instance
         # Create new instance
         return Snippet(**attrs) 
+    class Meta:
+        model = Snippet
+        fields = ('id','title','code','lineos','language','style')
+        
