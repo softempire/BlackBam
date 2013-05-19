@@ -5,6 +5,7 @@ from rest_framework.renderers import JSONRenderer
 from rest_framework.parsers import JSONParser
 from snippets.models import Snippet
 from snippets.serializers import SnippetSerializer
+from django.shortcuts import render_to_response
 
 class JSONResponse(HttpResponse):
     """
@@ -16,8 +17,8 @@ class JSONResponse(HttpResponse):
         super(JSONResponse,self).__init__(content,**kwargs)
 
 def index(request):
-    job = Snippet.objects.all()
-    return render_to_response('snippets/snnippet_detail.html',{'object':job})
+    snippets = Snippet.objects.all()
+    return render_to_response('snippets/snippet_detail.html',{'object':snippets})
     
 @csrf_exempt
 def snippet_list(request):
