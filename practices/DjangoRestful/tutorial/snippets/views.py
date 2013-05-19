@@ -14,6 +14,10 @@ class JSONResponse(HttpResponse):
         content = JSONRenderer().render(data)
         kwargs['content_type'] = 'application/json'
         super(JSONResponse,self).__init__(content,**kwargs)
+
+def index(request):
+    job = Snippet.objects.all()
+    return render_to_response('snippets/snnippet_detail.html',{'object':job})
     
 @csrf_exempt
 def snippet_list(request):
