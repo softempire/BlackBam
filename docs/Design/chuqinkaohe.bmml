@@ -1,0 +1,52 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1149" measuredH="717" mockupW="1006" mockupH="717">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="143" y="0" w="1006" h="717" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>A%20Web%20Page%0Ahttp%3A//</text>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Label" x="251" y="53" w="-1" h="-1" measuredW="110" measuredH="21" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%u592A%u4ED31%u53F7%uFF1A%u51FA%u52E4%u8003%u6838</text>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::MenuBar" x="254" y="96" w="674" h="39" measuredW="298" measuredH="29" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%u4EBA%u5DE5%u7BA1%u7406%2C%u6750%u6599%u7BA1%u7406%2C%u5408%u540C%u7BA1%u7406%2C%u5176%u4ED6%u7BA1%u7406</text>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Icon" x="191" y="91" w="-1" h="-1" measuredW="48" measuredH="48" zOrder="3" locked="false" isInGroup="-1"/>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::Label" x="969" y="106" w="134" h="-1" measuredW="104" measuredH="21" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%u5F53%u524D%u7528%u6237%uFF1A%u4E01%u5FD7%u5F3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="30" controlTypeID="com.balsamiq.mockups::Image" x="208" y="199" w="910" h="407" measuredW="650" measuredH="308" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/chuqinkaohe.png</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="31" controlTypeID="com.balsamiq.mockups::Label" x="357" y="199" w="61" h="-1" measuredW="45" measuredH="21" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%u592A%u4ED31%u53F7</text>
+      </controlProperties>
+    </control>
+    <control controlID="32" controlTypeID="com.balsamiq.mockups::NumericStepper" x="480" y="198" w="-1" h="-1" measuredW="41" measuredH="24" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>3</text>
+      </controlProperties>
+    </control>
+    <control controlID="33" controlTypeID="com.balsamiq.mockups::ComboBox" x="538" y="203" w="-1" h="-1" measuredW="93" measuredH="24" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>ComboBox</text>
+      </controlProperties>
+    </control>
+    <control controlID="34" controlTypeID="com.balsamiq.mockups::Image" x="216" y="579" w="889" h="24" measuredW="692" measuredH="24" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/pager.png</src>
+        <text/>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
