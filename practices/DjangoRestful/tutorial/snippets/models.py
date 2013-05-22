@@ -18,6 +18,6 @@ class Snippet(models.Model):
     language = models.CharField(choices=LANGUAGE_CHOICES,default='python',max_length=100)
     style = models.CharField(choices=STYLE_CHOICES,default='friendly',max_length=100)
 
-class Mate(models.Model):
-    ordering = ('created',)
+    class meta:
+        ordering = ('created',)
 

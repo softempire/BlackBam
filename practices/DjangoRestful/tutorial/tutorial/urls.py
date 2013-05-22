@@ -1,4 +1,5 @@
 from django.conf.urls import patterns, include, url
+from labors import views
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
@@ -21,5 +22,11 @@ urlpatterns = patterns(
     'snippets.views',
     url(r'^snippets/index', 'index'),
     url(r'^snippets/$', 'snippet_list'),
-    url(r'^snippets/(?P<pk>[0-9]+)/$', 'snippet_detail'),
+	url(r'^snippets/(?P<pk>[0-9]+)/$', 'snippet_detail'),
+)
+
+urlpatterns += patterns('',
+	url(r'^labors/add/$', views.add),
+    url(r'^labors/$', views.LaborList.as_view()),
+    url(r'^labors/(?P<pk>[0-9]+)/$', views.LaborDetail.as_view()),
 )
