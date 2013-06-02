@@ -1,12 +1,13 @@
-# Create your views here.
-from labors.models import Labor
-from labors.serializers import LaborSerializer
+#coding=utf-8#
+
 from django.http import Http404
 from django.http import HttpRequest
 from django.http import HttpResponse
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
+from BlackBam.labors.models import Labor
+from BlackBam.labors.serializers import LaborSerializer
 
 #Regular Views
 

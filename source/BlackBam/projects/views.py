@@ -1,14 +1,14 @@
 # coding = UTF-8
 
 # Create your views here.
-from projects.models import Project
-from projects.serializers import ProjectSerializer
 from django.http import Http404
 from django.http import HttpRequest
 from django.http import HttpResponse
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
+from BlackBam.projects.models import Project
+from BlackBam.projects.serializers import ProjectSerializer
 
 #Regular Views
 
