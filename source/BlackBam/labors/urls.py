@@ -1,17 +1,12 @@
 from django.conf.urls import patterns, include, url
+from BlackBam.labors.views import DepartmentList, DepartmentDetail
+from BlackBam.labors.views import LaborList, LaborDetail
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    # Examples:
-    # url(r'^$', 'BlackBam.views.home', name='home'),
-    # url(r'^BlackBam/', include('BlackBam.foo.urls')),
-
-    # Uncomment the admin/doc line below to enable admin documentation:
-    url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
-
-    # Uncomment the next line to enable the admin:
-    url(r'^admin/', include(admin.site.urls)),
+    url(r'^api/department_list/$', DepartmentList.as_view()),
+    url(r'^api/labor_list/$', LaborList.as_view()),
 )

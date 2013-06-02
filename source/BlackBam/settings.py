@@ -120,6 +120,7 @@ INSTALLED_APPS = (
     'django.contrib.admindocs',
     'rest_framework',
 	'BlackBam.projects',
+    'BlackBam.labors',
 )
 
 # A sample logging configuration. The only tangible logging

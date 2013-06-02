@@ -1,6 +1,5 @@
 #coding=utf-8#
 
-from django.forms import widgets
 from rest_framework import serializers
 from BlackBam.projects.models import Project
 from BlackBam.labors.serializers import DepartmentSerializer
