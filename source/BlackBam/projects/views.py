@@ -4,15 +4,23 @@
 from django.http import Http404
 from django.http import HttpRequest
 from django.http import HttpResponse
+from django.shortcuts import render_to_response
+from django.views.decorators.csrf import csrf_exempt
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from BlackBam.projects.models import Project
 from BlackBam.projects.serializers import ProjectSerializer
 
-#Regular Views
 
-#API Views
+#Regular Views *************************************************************************************
+
+def index(request):
+	return render_to_response('projects/index.html')
+
+#API Views *****************************************************************************************
+
+
 class ProjectList(APIView):
     """
     List all projects, or create a new labor.

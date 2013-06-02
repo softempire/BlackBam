@@ -107,7 +107,7 @@ ROOT_URLCONF = 'BlackBam.urls'
 WSGI_APPLICATION = 'BlackBam.wsgi.application'
 
 import os
-TEMPLATE_DIRS = (os.path.join(os.path.dirname(__file__), '..', 'templates').replace('\\','/'),)
+TEMPLATE_DIRS = (os.path.join(os.path.dirname(__file__), '..', 'BlackBam/templates').replace('\\','/'),)
 
 INSTALLED_APPS = (
     'django.contrib.auth',
