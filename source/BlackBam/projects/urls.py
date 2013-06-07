@@ -8,4 +8,5 @@ admin.autodiscover()
 urlpatterns = patterns('',
     url(r'^index/$', index),
     url(r'^api/project_list/$', ProjectList.as_view()),
+    url(r'^api/project_detail/$', ProjectDetail.as_view()),
 )

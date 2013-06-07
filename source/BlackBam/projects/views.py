@@ -4,8 +4,8 @@
 from django.http import Http404
 from django.http import HttpRequest
 from django.http import HttpResponse
-from django.shortcuts import render_to_response
 from django.views.decorators.csrf import csrf_exempt
+from django.shortcuts import render_to_response
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
@@ -30,8 +30,8 @@ class ProjectList(APIView):
         serializer = ProjectSerializer(projects, many=True)
         return Response(serializer.data)
 
-    def post(self, request, format=None):
-        serializer = ProjectSerializer(data=request.DATA)
+	def post(self, request, format=None):
+		serializer = ProjectSerializer(data=request.DATA)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
