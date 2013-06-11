@@ -6,14 +6,14 @@ from django.http import HttpResponse
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-from BlackBam.labors.models import Department, Labor, Attendance
-from BlackBam.labors.serializers import DepartmentSerializer, LaborSerializer, AttendanceSerializer
+from BlackBam.labors.models import Department, Labor, Attendance, Salary, SalaryStatement
+from BlackBam.labors.serializers import DepartmentSerializer, LaborSerializer, AttendanceSerializer, SalarySerializer, SalaryStatementSerializer
 
 
-#Regular Views *************************************************************************************
+#Regular Views (Department) ************************************************************************
 
 
-#API Views *****************************************************************************************
+#API Views (Department) ****************************************************************************
 
 class DepartmentList(APIView):
 	"""
@@ -61,10 +61,10 @@ class DepartmentDetail(APIView):
 		return Response(status=status.HTTP_204_NO_CONTENT)
 
 
-#Regular Views *************************************************************************************
+#Regular Views (Labor) *****************************************************************************
 
 
-#API Views *****************************************************************************************
+#API Views (Labor) *********************************************************************************
 class LaborList(APIView):
     """
     List all labors, or create a new labor.
@@ -110,10 +110,11 @@ class LaborDetail(APIView):
         labor.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
 
-#Regular Views *************************************************************************************
+
+#Regular Views (Attendance) ************************************************************************
 
 
-#API Views *****************************************************************************************
+#API Views (Attendance) ****************************************************************************
 class AttendanceList(APIView):
     """
     List all attendences, or create a new attendence.
@@ -157,4 +158,104 @@ class AttendanceDetail(APIView):
     def delete(self, request, pk, format=None):
         attendance = self.get_object(pk)
         attendance.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
+
+
+#Regular Views (Salary) ****************************************************************************
+
+
+#API Views (Salary) ********************************************************************************
+class SalaryList(APIView):
+    """
+    List all salaries, or create a new salary.
+    """
+    def get(self, request, format=None):
+        salaries = Salary.objects.all()
+        serializer = SalarySerializer(salaries, many=True)
+        return Response(serializer.data)
+
+    def post(self, request, format=None):
+        serializer = SalarySerializer(data=request.DATA)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+class SalaryDetail(APIView):
+    """
+    Retrieve, update or delete a salary instance.
+    """
+    def get_object(self, pk):
+        try:
+            return Salary.objects.get(pk=pk)
+        except Salary.DoesNotExist:
+            raise Http404
+
+    def get(self, request, pk, format=None):
+        salary = self.get_object(pk)
+        serializer = SalarySerializer(salary)
+        return Response(serializer.data)
+
+    def put(self, request, pk, format=None):
+        salary = self.get_object(pk)
+        serializer = SalarySerializer(salary, data=request.DATA)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def delete(self, request, pk, format=None):
+        salary = self.get_object(pk)
+        salary.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
+
+
+#Regular Views (SalaryStatement) *********************************************************************
+
+
+#API Views (SalaryStatement) *************************************************************************
+class SalaryStatementList(APIView):
+    """
+    List all SalaryStaments, or create a new SalaryStament.
+    """
+    def get(self, request, format=None):
+        salaryStatements = SalaryStatement.objects.all()
+        serializer = SalaryStatementSerializer(salaryStatements, many=True)
+        return Response(serializer.data)
+
+    def post(self, request, format=None):
+        serializer = SalaryStatementSerializer(data=request.DATA)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+class SalaryStatementDetail(APIView):
+    """
+    Retrieve, update or delete a SalaryStament instance.
+    """
+    def get_object(self, pk):
+        try:
+            return SalaryStatement.objects.get(pk=pk)
+        except SalaryStatement.DoesNotExist:
+            raise Http404
+
+    def get(self, request, pk, format=None):
+        salaryStatement = self.get_object(pk)
+        serializer = SalaryStatementSerializer(salaryStatement)
+        return Response(serializer.data)
+
+    def put(self, request, pk, format=None):
+        salaryStatement = self.get_object(pk)
+        serializer = SalaryStatementSerializer(salaryStatement, data=request.DATA)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def delete(self, request, pk, format=None):
+        salaryStatement = self.get_object(pk)
+        salaryStatement.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
