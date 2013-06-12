@@ -30,24 +30,24 @@ class Labor(models.Model):
 #出勤
 class Attendance(models.Model):
     labor = models.ForeignKey(Labor)
-    year = models.IntegerField(date.today().year)
-    month = models.IntegerField(date.today().month)
+    year = models.IntegerField()
+    month = models.IntegerField()
     attend = models.CommaSeparatedIntegerField(max_length=100)
 
     def __unicode__(self):
-        return "Attendance_" + self.labor.name + self.year + self.month
+        return "Attendance_" + self.labor.name + str(self.year) + str(self.month)
 
 
 #工资
 class Salary(models.Model):
     labor = models.ForeignKey(Labor)
-    year = models.IntegerField(date.today().year)
-    month = models.IntegerField(date.today().month)
+    year = models.IntegerField()
+    month = models.IntegerField()
     salary = models.IntegerField()
     actualSalary = models.IntegerField()
 
     def __unicode__(self):
-        return "Salary_" + self.labor.name + self.year + self.month
+        return "Salary_" + self.labor.name + str(self.year) + str(self.month)
 
 
 #工资出账单
