@@ -4,8 +4,8 @@
     <list default="true" id="f70f1f85-8efb-4125-aabb-102bf38bc551" name="Default" comment="" />
     <ignored path="BlackBam.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/admin.py" changelist="f70f1f85-8efb-4125-aabb-102bf38bc551" time="1370948276970" ignored="false" />
-    <file path="/Dummy.txt" changelist="f70f1f85-8efb-4125-aabb-102bf38bc551" time="1371013050350" ignored="false" />
+    <file path="/admin.py" changelist="f70f1f85-8efb-4125-aabb-102bf38bc551" time="1371131954421" ignored="false" />
+    <file path="/Dummy.txt" changelist="f70f1f85-8efb-4125-aabb-102bf38bc551" time="1371126527475" ignored="false" />
     <file path="/serializers.py" changelist="f70f1f85-8efb-4125-aabb-102bf38bc551" time="1370949233624" ignored="false" />
     <file path="/a.py" changelist="f70f1f85-8efb-4125-aabb-102bf38bc551" time="1370947730230" ignored="false" />
     <file path="/views.py" changelist="f70f1f85-8efb-4125-aabb-102bf38bc551" time="1370949035700" ignored="false" />
@@ -13,7 +13,7 @@
     <file path="/settings.py" changelist="f70f1f85-8efb-4125-aabb-102bf38bc551" time="1371013462491" ignored="false" />
     <file path="/index.html" changelist="f70f1f85-8efb-4125-aabb-102bf38bc551" time="1370178980157" ignored="false" />
     <file path="/a.html" changelist="f70f1f85-8efb-4125-aabb-102bf38bc551" time="1370160628653" ignored="false" />
-    <file path="/models.py" changelist="f70f1f85-8efb-4125-aabb-102bf38bc551" time="1370949283086" ignored="false" />
+    <file path="/models.py" changelist="f70f1f85-8efb-4125-aabb-102bf38bc551" time="1371132327056" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,15 +35,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BlackBam/templates/projects/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BlackBam/labors/models.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -62,28 +53,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forms.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BlackBam/labors/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="serializers.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BlackBam/labors/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
             <state line="28" column="29" selection-start="927" selection-end="927" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tests.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BlackBam/labors/tests.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -107,11 +80,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BlackBam/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="27" selection-start="1182" selection-end="1197" vertical-scroll-proportion="0.72289157">
+            <state line="32" column="27" selection-start="1208" selection-end="1208" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BlackBam/projects/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="33" selection-start="402" selection-end="402" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/BlackBam/projects/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BlackBam/projects/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="23" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#16#48#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -140,8 +142,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/BlackBam/projects/admin.py" />
-        <option value="$PROJECT_DIR$/BlackBam/labors/forms.py" />
         <option value="$PROJECT_DIR$/BlackBam/projects/forms.py" />
         <option value="$PROJECT_DIR$/BlackBam/projects/tests.py" />
         <option value="$PROJECT_DIR$/BlackBam/labors/tests.py" />
@@ -156,6 +156,8 @@
         <option value="$PROJECT_DIR$/BlackBam/labors/models.py" />
         <option value="$PROJECT_DIR$/BlackBam/labors/serializers.py" />
         <option value="$PROJECT_DIR$/BlackBam/settings.py" />
+        <option value="$PROJECT_DIR$/BlackBam/projects/admin.py" />
+        <option value="$PROJECT_DIR$/BlackBam/projects/models.py" />
       </list>
     </option>
   </component>
@@ -284,7 +286,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="labors" />
+              <option name="myItemId" value="projects" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -295,12 +297,12 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -410,11 +412,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293944" sideWeight="0.71363634" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24963072" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24815361" sideWeight="0.71363634" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.288774" sideWeight="0.7147727" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28295454" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28636363" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28522727" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -483,21 +485,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/BlackBam/templates/labors/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="119" selection-end="119" vertical-scroll-proportion="-4.869565" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BlackBam/projects/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BlackBam/projects/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BlackBam/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="0" selection-start="414" selection-end="414" vertical-scroll-proportion="0.0" />
@@ -578,7 +565,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BlackBam/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="27" selection-start="1182" selection-end="1197" vertical-scroll-proportion="0.72289157">
+        <state line="32" column="27" selection-start="1208" selection-end="1208" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BlackBam/projects/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="23" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#16#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BlackBam/projects/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="33" selection-start="402" selection-end="402" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BlackBam/projects/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
