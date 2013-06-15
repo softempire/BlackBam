@@ -1,6 +1,5 @@
 #coding=utf-8#
 
-from datetime import date
 from django.db import models
 from BlackBam.projects.models import Project
 
@@ -20,15 +19,19 @@ class Department(models.Model):
 
 #员工
 class Labor(models.Model):
-    name = models.CharField(max_length=20, blank=False)
-    sex = models.BooleanField()
-    job = models.CharField(max_length=200)
-    IDCard = models.CharField(max_length=50)
-    contact = models.CharField(max_length=300)
-    notes = models.CharField(max_length=500)
+    name = models.CharField(max_length=20, blank=False, verbose_name='姓名')
+    sex = models.BooleanField(default=True, verbose_name='男')
+    job = models.CharField(max_length=200, verbose_name='职务')
+    IDCard = models.CharField(max_length=50, verbose_name='身份证')
+    contact = models.CharField(max_length=300, verbose_name='联系方式')
+    notes = models.CharField(max_length=500, verbose_name='备注')
 
     def __unicode__(self):
         return "Labor_" + self.name
+
+    class Meta:
+        verbose_name = '员工'
+        verbose_name_plural = '员工'
 
 
 #出勤

@@ -4,7 +4,7 @@
     <list default="true" id="f70f1f85-8efb-4125-aabb-102bf38bc551" name="Default" comment="" />
     <ignored path="BlackBam.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/admin.py" changelist="f70f1f85-8efb-4125-aabb-102bf38bc551" time="1371302031740" ignored="false" />
+    <file path="/admin.py" changelist="f70f1f85-8efb-4125-aabb-102bf38bc551" time="1371302816845" ignored="false" />
     <file path="/Dummy.txt" changelist="f70f1f85-8efb-4125-aabb-102bf38bc551" time="1371301889998" ignored="false" />
     <file path="/serializers.py" changelist="f70f1f85-8efb-4125-aabb-102bf38bc551" time="1370949233624" ignored="false" />
     <file path="/a.py" changelist="f70f1f85-8efb-4125-aabb-102bf38bc551" time="1370947730230" ignored="false" />
@@ -13,7 +13,7 @@
     <file path="/settings.py" changelist="f70f1f85-8efb-4125-aabb-102bf38bc551" time="1371013462491" ignored="false" />
     <file path="/index.html" changelist="f70f1f85-8efb-4125-aabb-102bf38bc551" time="1370178980157" ignored="false" />
     <file path="/a.html" changelist="f70f1f85-8efb-4125-aabb-102bf38bc551" time="1370160628653" ignored="false" />
-    <file path="/models.py" changelist="f70f1f85-8efb-4125-aabb-102bf38bc551" time="1371301411360" ignored="false" />
+    <file path="/models.py" changelist="f70f1f85-8efb-4125-aabb-102bf38bc551" time="1371302582510" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +61,7 @@
       <file leaf-file-name="admin.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BlackBam/labors/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="36" selection-start="490" selection-end="490" vertical-scroll-proportion="0.6233766">
+            <state line="6" column="11" selection-start="152" selection-end="152" vertical-scroll-proportion="-0.12987013">
               <folding>
                 <element signature="e#16#48#0" expanded="true" />
               </folding>
@@ -119,8 +119,10 @@
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BlackBam/labors/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="16" selection-start="528" selection-end="528" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="21" column="0" selection-start="430" selection-end="825" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#16#44#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -172,40 +174,10 @@
           <State>
             <id />
           </State>
-          <State>
-            <id>CSS</id>
-          </State>
-          <State>
-            <id>Code style issuesJavaScript</id>
-          </State>
-          <State>
-            <id>Control flow issuesJavaScript</id>
-          </State>
-          <State>
-            <id>Django</id>
-          </State>
-          <State>
-            <id>JavaScript</id>
-          </State>
-          <State>
-            <id>JavaScript function metricsJavaScript</id>
-          </State>
-          <State>
-            <id>JavaScript validity issuesJavaScript</id>
-          </State>
-          <State>
-            <id>Potentially confusing code constructsJavaScript</id>
-          </State>
-          <State>
-            <id>Python</id>
-          </State>
-          <State>
-            <id>SQL</id>
-          </State>
         </expanded-state>
         <selected-state>
           <State>
-            <id>XML</id>
+            <id>JavaScript</id>
           </State>
         </selected-state>
       </profile-state>
@@ -314,7 +286,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
@@ -438,7 +410,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28295454" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28289473" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28289473" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -545,7 +517,9 @@
     <entry file="file://$PROJECT_DIR$/BlackBam/labors/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="27" selection-start="387" selection-end="387" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="e#16#44#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -571,13 +545,6 @@
     <entry file="file://$PROJECT_DIR$/BlackBam/projects/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BlackBam/labors/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="16" selection-start="528" selection-end="528" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -621,9 +588,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/BlackBam/labors/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="430" selection-end="825" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#16#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/BlackBam/labors/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="36" selection-start="490" selection-end="490" vertical-scroll-proportion="0.6233766">
+        <state line="6" column="11" selection-start="152" selection-end="152" vertical-scroll-proportion="-0.12987013">
           <folding>
             <element signature="e#16#48#0" expanded="true" />
           </folding>
