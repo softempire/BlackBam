@@ -7,11 +7,15 @@ from BlackBam.projects.models import Project
 
 #部门
 class Department(models.Model):
-    name = models.CharField(max_length=200, blank=False)
-    project = models.ForeignKey(Project)
+    name = models.CharField(max_length=200, blank=False, verbose_name='名称')
+    project = models.ForeignKey(Project, verbose_name='工程')
 
     def __unicode__(self):
-        return "Department_" + self.name + self.project.name
+        return self.name
+
+    class Meta:
+        verbose_name = '班组'
+        verbose_name_plural = '班组'
 
 
 #员工
