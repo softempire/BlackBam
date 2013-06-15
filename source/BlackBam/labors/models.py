@@ -27,7 +27,7 @@ class Labor(models.Model):
     notes = models.CharField(max_length=500, verbose_name='备注')
 
     def __unicode__(self):
-        return "Labor_" + self.name
+        return self.name
 
     class Meta:
         verbose_name = '员工'
@@ -36,34 +36,45 @@ class Labor(models.Model):
 
 #出勤
 class Attendance(models.Model):
-    labor = models.ForeignKey(Labor)
-    year = models.IntegerField()
-    month = models.IntegerField()
-    attend = models.CommaSeparatedIntegerField(max_length=100)
+    labor = models.ForeignKey(Labor, verbose_name='员工')
+    year = models.IntegerField(verbose_name='年份')
+    month = models.IntegerField(verbose_name='月份')
+    attend = models.CommaSeparatedIntegerField(max_length=100, verbose_name='出勤')
 
     def __unicode__(self):
         return "Attendance_" + self.labor.name + str(self.year) + str(self.month)
 
+    class Meta:
+        verbose_name = '出勤'
+        verbose_name_plural = '出勤'
+
 
 #工资
 class Salary(models.Model):
-    labor = models.ForeignKey(Labor)
-    year = models.IntegerField()
-    month = models.IntegerField()
-    salary = models.IntegerField()
-    actualSalary = models.IntegerField()
+    labor = models.ForeignKey(Labor, verbose_name='员工')
+    year = models.IntegerField(verbose_name='年份')
+    month = models.IntegerField(verbose_name='月份')
+    salary = models.IntegerField(verbose_name='应发工资')
+    actualSalary = models.IntegerField(verbose_name='实发工资')
 
     def __unicode__(self):
-        return "Salary_" + self.labor.name + str(self.year) + str(self.month)
+        return "工资_" + self.labor.name + str(self.year) + str(self.month)
 
+    class Meta:
+        verbose_name = '工资'
+        verbose_name_plural = '工资'
 
 #工资出账单
 class SalaryStatement(models.Model):
-    labor = models.ForeignKey(Labor)
-    arriveDate = models.DateField()
-    leaveDate = models.DateField()
-    attachment = models.CharField(max_length=500)
-    notes = models.CharField(max_length=500)
+    labor = models.ForeignKey(Labor, verbose_name='员工')
+    arriveDate = models.DateField(verbose_name='到班组时间')
+    leaveDate = models.DateField(verbose_name='离开班组时间')
+    attachment = models.CharField(max_length=500, verbose_name='附件')
+    notes = models.CharField(max_length=500, verbose_name='备注')
 
     def __unicode__(self):
-        return "SalaryStatement_" + self.labor.name
+        return "工资出账单_" + self.labor.name
+
+    class Meta:
+        verbose_name = '工资出账单'
+        verbose_name_plural = '工资出账单'
